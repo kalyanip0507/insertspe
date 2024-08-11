@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a[100],i,n,new,pos;
+    printf("enter size");
+    scanf("%d",&n);
+    printf("Enter elements");
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    printf("enter pos and new element");
+    scanf("%d %d",&pos,&new);
+    for(i=n;i>pos-1;i--){
+        a[i]=a[i-1];
+    }
+    a[i]=new;
+    for(i=0;i<=n;i++)
+    {
+        printf("%d",a[i]);
+    }return 0;
+}
